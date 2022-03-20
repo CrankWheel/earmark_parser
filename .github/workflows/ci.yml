@@ -8,7 +8,7 @@ on:
   push:
     branches:
       - master
-      - rel-1.4.23
+      - rel-1.4.24
 
 jobs:
   test:
