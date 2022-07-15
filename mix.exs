@@ -7,7 +7,7 @@ defmodule EarmarkParser.MixProject do
   @deps [
     {:earmark_ast_dsl, "~> 0.3.6", only: [:test]},
     {:excoveralls, "~> 0.14.4", only: [:test]},
-    {:extractly, "~> 0.5.3", only: [:dev]},
+    {:extractly, git: "https://github.com/CrankWheel/extractly.git", only: [:dev]},
     {:floki, "~> 0.32", only: [:dev, :test]}
   ]
 
@@ -29,7 +29,7 @@ defmodule EarmarkParser.MixProject do
     [
       app: :earmark_parser,
       version: @version,
-      elixir: "~> 1.11",
+      elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: @deps,
       description: @description,
